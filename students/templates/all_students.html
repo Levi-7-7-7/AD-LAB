@@ -1,0 +1,11 @@
+<html>
+<body>
+    <h1>Students</h1>
+    <ul>
+        {% for x in students %}
+            <li><a href="details/{{ x.id }}">{{ x.first_name }} {{ x.last_name }}</a></li>
+        {% endfor %}
+    </ul>
+    <p>Add new student <a href="/students/entry">New Student</a></p>
+</body>
+</html>
